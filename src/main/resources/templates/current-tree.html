@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currently Processed Tree</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Currently Processed Binary Search Tree</h1>
+
+    <div class="json-output">
+        <pre th:text="${treeJson}"></pre> <!-- Correct Thymeleaf syntax -->
+    </div>
+
+    <a href="/previous-trees" class="btn">View Previous Trees</a>
+</div>
+
+</body>
+</html>
